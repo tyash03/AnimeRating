@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  color: rgb(79, 18, 95);
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgb(9, 7, 7);
+  color: rgb(79, 18, 95);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: rgb(79, 18, 95);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Card Container */
+.card {
+  background: rgb(79, 18, 95);
+  padding: 0rem;
+  margin: 5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure content stays at the bottom */
+  position: relative; /* Needed for positioning text */
+  height: 400px; /* Set a fixed height for the card */
+  overflow: hidden;
+}
+
+/* Title at Bottom Center */
+.card h2 {
+  position: absolute;
+  bottom: 4rem; /* Distance from the bottom of the card */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  background: rgba(0, 0, 0, 0.6); /* Optional: Background for readability */
+  color: white; /* Text color */
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+
+.card p {
+  color: #666;
+}
+
+/* Buttons */
+.btn {
+  background-color: rgb(79, 18, 95);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #cd6ae1;
+}
+
+.btn-close {
+  background-color: rgb(79, 18, 95);
+}
+
+.btn-close:hover {
+  background-color: #cd6ae1;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cd6ae1;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 1, 24, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: rgb(78, 59, 72);
+  padding: 10rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Pages */
+.home-page, .top-rated-page, .search-page {
+  padding: 2rem;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.anime-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.anime-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.anime-item {
+  background: rgb(79, 18, 95);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.anime-thumbnail {
+  width: 100%;
+  border-radius: 10px;
+}
